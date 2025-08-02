@@ -3,7 +3,7 @@
 ## Summary
 Meadow is a decentralized payment processing protocol aimed at being uncensorable and less resource heavy.
 
-* It does not rely on a blockchain or a P2P technology
+* It does not rely on a blockchain or a peer-to-peer technology
 * It's simple to implement
 * It can't be censored
 * It's end to end encrypted, thus making the transactions invisible for the mint vendor
@@ -17,7 +17,7 @@ Meadow is a decentralized payment processing protocol aimed at being uncensorabl
 ```
 ----------                       ----------                       ----------
 |        |                       |        |                       |        |
-|WALLET 1| - - - - - - - - - - > |  MINT  | - - - - - - - - - - > |WALLET 2|
+|WALLET 1| < - - - - - - - - - > |  MINT  | < - - - - - - - - - > |WALLET 2|
 |        |                       |        |                       |        |
 |        |                       |        |                       |        |
 ----------                       ----------                       ----------
@@ -26,7 +26,9 @@ Meadow is a decentralized payment processing protocol aimed at being uncensorabl
 The default port for a mint is `2222`
 
 ### Wallet structure
-Wallets have a keypair and an address.
+Wallets have a keypair and an address. 
+
+Keypairs use the secp256k1 algorithm.
 
 Addresses can be also pointed to a web domain by simply creating a file called `meadow` or `meadow.txt` inside of `.well-known` folder.
 
