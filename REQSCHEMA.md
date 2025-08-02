@@ -16,6 +16,6 @@ server> ["READY"]
 client> ["SYNC"]
 server> ["SYNCED", 45]
 
-client> ["SEND", "<public key>", "<request signature>", 100]
+client> ["SEND", "<public key>", "<encrypted banknote>", "<request signature>", 100]
 server> ["SENT", "<public key>", 100]
 ```
